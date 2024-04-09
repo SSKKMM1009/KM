@@ -1,5 +1,15 @@
 body{}
 
+.header_sm{
+    width: 100%;
+    height: 10px;
+    margin-bottom: 20px;
+}
+
+.header_sm img{
+    width: 30px;
+}
+
 .sm_menu{
     width: 100%;
     height: 100px;
@@ -400,6 +410,7 @@ body{}
 /*container*/
 
 .container{
+    overflow: hidden;
     background: #fff;
 }
 
@@ -704,6 +715,7 @@ body{}
 }
 
 .package_tag{
+    white-space: nowrap;
     color : rgb(117,117,117);
     width: auto;
     height: 25px;
@@ -788,6 +800,7 @@ body{}
 
 .p_a_sec_main img{
     width: 100%;
+    /* width: 47vw; */
 }
 
 .p_a_sec_item{
@@ -836,39 +849,18 @@ body{}
 
 
 .aaside{
-    top: 0;
-    left: 0;
     font-size: 30px;
     font-weight: 900;
 }
 
-.aaside1{
-    line-height: 70px;
-    padding: 0;
-}
-
-.aaside2{
-    padding-top: 8px;
-}
-
 .lline{
-    width: 100px;
+    width: 70px;
     height: 1px;
     background: #000;
     border: 1px solid;
     position: relative;
     top: 15px;
     left: 0px;
-}
-
-.lline1{
-    width: 100px;
-    height: 1px;
-    background: #000;
-    border: 1px solid;
-    position: relative;
-    top: 34px;
-    left: 8px;
 }
 
 
@@ -884,12 +876,14 @@ body{}
 }
 
 .rr_title1{
+    white-space: nowrap;
     margin: 0;
     font-size: 22px;
     line-height: 40px;
 }
 
 .rr_desc{
+    white-space: nowrap;
     font-size: 13px;
 }
 .rr_tag, .etc_sec_btm_tag{
@@ -930,6 +924,7 @@ body{}
 
 .membership_header{
     padding-top: 30px;
+    background: rgb(245, 245, 247)
 }
 
 .membership_body{
@@ -937,6 +932,20 @@ body{}
     width: 100%;
     gap: 30px;
     margin-bottom: 100px;
+}
+
+.opacity_box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba;
+    width: 100%;
+    height: 99%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.zi{
+    z-index: 1;
 }
 
 
@@ -950,6 +959,7 @@ body{}
 }
 
 .membership_txt_box{
+    z-index: 1;
     position: absolute;
     bottom: 40px;
     left: 30px;
@@ -1056,7 +1066,6 @@ body{}
 .sm_long_top, .sm_long_btm{
     width: 45%;
     position: absolute;
-    border: 1px solid;
     top: 0;
     left: 0;
 }
@@ -1069,12 +1078,36 @@ body{}
     right: 0;
 }
 
+.sm_short_top_items{
+    padding: 20px 0;
+}
 .sm_short_top_items, .sm_short_btm_items{
     width: 100%;
 }
 
 .sm_long_top img, .sm_short_top_items img, .sm_long_btm img, .sm_short_btm_items img{
     width: 100%;
+}
+
+.sm_title{
+    font-size: 22px;
+    font-weight: 900;
+    padding: 20px 0;
+}
+
+.sm_desc{
+    line-height: 35px;
+    font-size: 15px;
+}
+
+.sm_desc img{
+    width: 20px;
+}
+
+.sm_tag{
+    display: flex;
+    gap: 13px;
+    padding-top: 15px;
 }
 
 
@@ -1105,6 +1138,19 @@ body{}
 }
 
 @media screen and (max-width: 1440px)  {
+    .h_bot{
+        padding: 0;
+    }
+
+    .nav_items{
+        font-size: 12px;
+        /* white-space: nowrap; */
+    }
+
+    .lline{
+        width: 50px;
+    }
+
     .sm_menu{
         width: 100%;
         height: 100px;
@@ -1125,6 +1171,10 @@ body{}
 
    .p_a_sec_btm{
     gap: 20px;
+   }
+
+   .aaside{
+    font-size: 20px;
    }
 
    .e_o_sec{
@@ -1194,6 +1244,9 @@ body{}
 
 @media screen  and (max-width: 1024px) {
    
+    .banner{
+        height : 46vw
+    }
 
     .sm_menu{
         padding: 0 3%;
@@ -1270,7 +1323,6 @@ body{}
     
     .e_online_header{
         gap: 0;
-        flex-wrap: wrap;
     }
 
     .e_o_sec{
@@ -1291,11 +1343,24 @@ body{}
     
     
     .e_o_title {
+        /* white-space: nowrap; */
         font-size: 30px ;
+    }
+
+    .c_txt{
+        white-space: nowrap;
+    }
+
+    .rright{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 35px;
     }
 
 
     .aaside{
+        text-align: center;
         font-size: 15px ;
         font-weight: 500;
     }
@@ -1308,6 +1373,7 @@ body{}
         margin-top: 100px;
     }
 
+ 
     .package_tag{
        padding: 0 5px;
     }
@@ -1330,6 +1396,10 @@ body{}
         left: 10px;
         font-size: 15px;
     }
+
+    .p_a_sec_item_img img{
+        width: 47vw;
+    }
     
 
     .rr_tag{
@@ -1338,6 +1408,8 @@ body{}
 
     .rr_title1{
         font-size: 18px ;
+        text-align: center;
+        line-height: 30px;
     }
 
     .pos_active{
@@ -1363,11 +1435,12 @@ body{}
 
     .p_a_sec_btm{
         justify-content: space-evenly;
+        gap: 0;
     }
 
 
     .lline{
-        width: 90px ;
+        width: 70px ;
         height: 1px ;
         border: none ;
     }
@@ -1450,8 +1523,17 @@ body{}
 
     .e_online_header{
         padding: 0;
-        justify-content: center;
+        justify-content: space-evenly;
     }
+
+    .w_c{
+        height: 30px;
+    }
+
+    .e_o_title{
+        font-size: 26px;
+    }
+
 
     .e_online_body_sm{
         /* gap: 50px; */
@@ -1467,19 +1549,33 @@ body{}
     
     }
 
+    .aaside{
+       display: none;
+    }
+
+    .rright{
+        padding-top: 5px;
+    }
+
+
 
     .p_a_sec{
         width: auto;
         padding: 5px;
     }
     
-    .p_a_sec1{
+    .rr_desc{
+        text-align: center;
     }
     
     .tag_box{
-        justify-content: space-evenly;
+        justify-content: space-around;
         gap: 0;
         font-size: 15px;
+    }
+
+    .package_tag:nth-child(4){
+        display: none;
     }
 
     .package_desc{
@@ -1495,18 +1591,20 @@ body{}
         display: none;
     }
 
-    .membership{
-        margin: 0;
-        width: 980px;
-        padding: 0;
-    }
+
 
     .membership_box{
-        width: calc(100%/4);
+        width: calc((100% - 1px* 3) / 4);
     }
 
     .membership_body{
-        gap: 0px;
+        gap: 1px;
+    }
+
+    .membership_txt_box{
+        white-space: nowrap;
+        text-align: center;
+        font-size: 10px;
     }
 
     .contents_area{
@@ -1518,18 +1616,56 @@ body{}
     }
 }
 
+@media screen and (max-width : 668px) {
+    .e_online_header{
+        padding: 0 10px;
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    .e_o_title{
+        font-size: 20px;
+    }
+
+    .coupon{
+        font-size: 18px;
+    }
+
+    .w_c{
+        height: 30px;
+    }
+}
+
+@media screen and (max-width : 570px) {
+    
+}
+
 @media screen and (max-width: 480px) {
 
-   
     .e_online_header{
         /* width: 120%; */
     }
+
+    .coupon{
+        align-items: center;
+        font-size: 12px;
+    }
+
 
     .e_o_title{
         font-size: 16px;
     }
 
     .e_online_body_sm{
+        gap: 10px;
+    }
+
+    .e_o_sec{
+        width: calc((100% - 10px)/2);
+    }
+
+    .e_o_sec{
+        border: none;
     }
 
     .rr_tag{
@@ -1568,11 +1704,7 @@ body{}
         display: none;
     }
 
-    .membership{
-        margin: 0;
-        width: 980px;
-        padding: 0;
-    }
+
 
     .membership_body{
         gap: 0px;
@@ -1584,4 +1716,132 @@ body{}
     }
 
   
+}
+
+@media screen and (max-width: 320px) {
+    .sm_menu{
+        gap: 12px;
+    }
+
+    .e_online_header{
+        font-size: 15px;
+        display: block;
+        line-height: 20px;
+    }
+
+    .e_o_title{
+        white-space: nowrap;
+        margin: 0;
+    }
+
+    .coupon{
+        flex-direction: row;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .coupon img{
+        width: 1px;
+    }
+
+    .w_c{
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        border: none;
+        padding: 0 0 20px 0;
+        text-decoration: underline 5px rgb(89, 208, 189);
+    }
+
+    .e_online{
+        margin: 30px 0;
+    }
+
+    .e_online_body_sm{
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .e_o_sec{
+        border: none;
+        width: 100%;
+        line-height: 0;
+    }
+
+    .e_o_sec_item{
+       margin-top: 10px;
+    }
+
+    .package{
+        margin: 0;
+        padding: 0;
+        margin-right: 0;
+    }
+
+    .swiper-slide{
+        left: -5px;
+    }
+
+    .pos_active_body{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .p_a_sec{
+        border: none;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .p_a_sec img{
+       width: 100%;
+    }
+
+    .p_a_sec_main{
+        display: none;
+    }
+
+    .p_a_sec_item{
+        margin: 0;
+    }
+
+    .p_a_sec2 .p_a_sec_item:nth-child(8) .rr_title{
+        white-space: nowrap;
+        font-size: 15px;
+    }
+
+    .sm_title{
+        font-size: 13px;
+        padding: 0;
+        letter-spacing: -1px;
+    }
+
+
+    .sm_short_top_items{
+        padding: 0;
+    }
+
+    .sm_short_btm_items{
+        padding: 0;
+    }
+
+    .sm_desc{
+        display: none;
+    }
+
+    .sm_2 .sm_short_btm .sm_short_btm_items:nth-child(1) .sm_title{
+        font-size: 12px;
+        padding: 0;
+        letter-spacing: -1px;
+    }
+
+    .sm_2{
+        margin-top: 20px;
+    }
+
+    
+
+
+
 }

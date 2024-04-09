@@ -154,7 +154,7 @@ $(document).ready(function(){
 
 
 
-$('.banner').eq(0).css({left: 0})
+$('.banner').eq(0).css({left: '-2px'})
 
     let bn_length = $('.banner').length;
     let bn_idx = 0;
@@ -366,6 +366,41 @@ if(etc_sb_top1 >= etc_s_top){
 
      })
 
+
+
+     let last_scroll = 0;
+
+     $(window).scroll(function(){
+ 
+         let s_top = $(this).scrollTop()
+ 
+         // console.log("최근 스크롤값 : ", last_scroll, ",스크롤탑값 : ",s_top)
+ 
+         //내려갈때
+         if(s_top > last_scroll){
+ 
+             $('.sm_menu').css({
+                 opacity : 0,
+                 transition : "all 0.05s" 
+             })
+ 
+         }
+ 
+         //올라갈때
+         else if(s_top < last_scroll){
+ 
+             $('.sm_menu').css({
+                 opacity : 1,
+                 display : 'flex',
+                 position : 'fixed',
+                 marginTop : 0,
+                 transition : "all 0.5s" 
+             })
+         }
+         
+         last_scroll = s_top;
+         
+     })
 
 
 
