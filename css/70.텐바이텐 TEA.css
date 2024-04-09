@@ -1,0 +1,105 @@
+body { margin: 0;}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.mr_0 { margin-right: 0 !important;}
+.mb_0 { margin-bottom: 0 !important;}
+.contents_area {
+    width: 1140px;
+    margin: 0 auto;
+
+    height: 100%;
+    position: relative; 
+
+    border: 1px solid aqua;
+}
+/* ////////////////////////////// */
+/* top_banner */
+.top_banner {
+    min-width: 1140px;
+    height: 40px;
+    font-size: 0;
+    background: #fb0073;
+    position: relative;
+    text-align: center;
+}
+.top_banner img {
+    position: relative;
+    z-index: 9999;
+}
+.tb_bg {
+    width: 50%;
+    height: 100%;
+    background: #ee024d;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+
+/* header */
+.header {
+    height: 87px;
+}
+.logo {
+    width: 200px;
+    height: 100%;
+    background: url(../img/텐바이텐/logo.png) no-repeat center left;
+}
+.h_menu_top {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.h_menu_top li {
+    float: left;
+    padding: 5px 15px;
+    /* border: 1px solid; */
+    font-size: 13px;
+}
+.v_line {
+    width: 1px;
+    height: 10px;
+    background-color: #bdbdbd;
+    padding: 0 !important;
+    margin: 8px 13px;
+}
+.h_menu_bot {
+    height: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+}
+.h_bot_li {
+    height: 100%;
+    float: left;
+    border: 1px solid;
+    padding: 4px 10px;
+    box-sizing: border-box;
+    font-weight: 900;
+    cursor: pointer;
+}
+.menu_active_txt {
+    color: #ee024d;
+}
+
+.search_box {
+    float: left;
+    width: 250px;
+    height: 100%;
+    border: 1px solid red;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.txt_search {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}

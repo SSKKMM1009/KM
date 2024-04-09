@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--  
+        목록태그: 블록레벨 == 사이즈 정해주지 않으면 옆으로 끝까지
+
+        **주의 : 부모자식관계 지키키키키킼
+
+        **u1 : li의 부모로만 사용 가눙 : 순서가 필요없는 목록 만들때 사용
+
+        ol : li의 부모로만 사용 가능 : 순서가 필요한 목록 만들때 사용
+
+        il :ul ol의 자식으로만 사용 가능 : 리스트 알맹이
+
+
+
+        속성
+        
+        1)type : 리스스트이 모양(점)을 처리
+                ul - disc :기본값
+                   - circle : 흰점
+                   -square :검은점
+                   none : 없음
+
+
+                 ol - 1 :기본값, 정수
+                      a : 영문 소문자
+                      A : 영문대문자
+                      i :로마 대문자
+                      I : 로마 소문자
+
+          2) start :(ol용) 시작점을 바꿔준다        
+          3) reversed(ol용) : 시작점부터 거꾸로: start와 같이 쓰는데 start를 li 개수보다 같거나 많게
+          
+-->         
+
+
+<ul>
+<li>menu1</li>
+<li>menu2</li>
+    <ul>
+        <li>sec1</li>
+        <li>sec2</li>
+    </ul>
+<li>menu3</li>
+</ul>
+
+
+<ul type = "none">
+    <li>menu1</li>
+    <li>menu2</li>
+        <ul>
+            <li>sec1</li>
+            <li>sec2</li>
+        </ul>
+    <li>menu3</li>
+    </ul>
+
+
+
+<ol type = "a" start = "3" reversed>
+    <li>menu1</li>
+    <li>menu2</li>
+        <ul>
+            <li>sec1</li>
+            <li>sec2</li>
+        </ul>
+    <li>menu3</li>
+</ol>
+
+
+ 
+</body>
+</html>

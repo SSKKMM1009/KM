@@ -1,0 +1,193 @@
+body{
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.contents_area{
+    width: 1100px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* /////////////////////////////////////////// */
+
+.header{
+    height: 90px;
+    padding-top: 10px;
+    position: relative;
+}
+
+
+.logo{
+    background: url(../img/naver_logo.png) no-repeat left / contain;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.IR_method{
+    display: block;
+    height: 100px;
+    text-indent: -99999px;
+}
+
+.search_box{
+    width: 350px;
+    height: auto;
+    position: absolute;
+    left: 170px;
+    top: 34px;
+}
+
+.search_txt{
+    border: 3px solid rgb(80, 165, 46);
+    width: 312px;
+    height: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+
+}
+
+.search_icon{
+    width: 35px;
+    height: 30px;
+    background: rgb(80, 165, 46) url(../img/search_icon.png) no-repeat center / 50%;
+    position: absolute;
+    top: 0;
+    right: 3px;
+}
+
+.nav{
+    overflow: hidden;
+}
+.nav_box li{
+    float: left;
+    padding: 10px 8px;
+    color: rgb(80, 165, 46);
+    font-weight: 800;
+}
+
+.center{
+    background-color: rgb(242, 244, 247);
+}
+
+.main{
+    width: 70%;
+    float: left;
+}
+
+.main_item_1{
+    height: 150px;
+    background-color: rgb(95,158,160);
+    margin-bottom: 5px;
+}
+
+.main_item_2{
+    height: 50px;
+    background-color: rgb(255,99,71);
+    margin-bottom: 5px;
+}
+
+.news{
+    background-color: rgb(244,225,244);
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.news_ul{
+    background-color: orange;
+    height: 200px;
+    margin-bottom: 5px;
+}
+
+.news_ul li{
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    float: left;
+    width: calc((100%) / 6);
+    height: calc((100%)/3);
+}
+
+.news_ul li div{
+   width: 80%;
+   height: 20px;
+   background-color: rgb(135, 206, 235);
+   margin: 25px auto;
+}
+
+.main_item_4{
+    height: 650px;
+    background-color: rgb(216, 191, 216);
+}
+
+.aside{
+    width: calc((30% - 5px));
+    float: right;
+}
+
+.aside_item_1{
+    height: 150px;
+    background-color: rgb(255, 99, 71);
+}
+
+.aside_item_2{
+    height: 140px;
+    background-color: rgb(83, 165, 46);
+}
+
+.aside_item_3{
+    height: 140px;
+    background-color: rgb(135, 206, 235);
+}
+
+.aside_shopping_box{
+    border: 1px solid;
+    overflow: hidden;
+    background-color: #fff;
+    margin-top: 5px;
+}
+
+.title{
+    border-bottom: 1px solid;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.shopping_ul{
+
+}
+
+.shopping_li{
+    float: left;
+    width: calc((100% - 10px * 2 * 3)/3);
+    margin: 10px;
+}
+
+.shopping_img{
+    height: 100px;
+    border: 1px solid;
+}
+
+.shopping_desc{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer{
+    height: 300px;
+}

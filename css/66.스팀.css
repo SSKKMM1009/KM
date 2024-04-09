@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.contents_area{
+    position: relative;
+    width: 940px;
+    height: 100%;
+    margin: 0 auto;
+    /* background-color: violet; */
+}
+
+/* //////////////////////////////////////////////// */
+
+.header_OUTER{
+    /* background-color: #000; */
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+.header_in{
+    /* background-color: #000; */
+    height: 100px;
+
+}
+
+.logo{
+    background-color: lime;
+    width: 170px;
+    height: 50px;
+    margin: 25px 0 ;
+    float: left;
+}
+
+.outer_ul {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    /* background: pink; */
+    padding-top: 25px;
+    color: white;
+}
+.outer_li {
+    float: left;
+    padding: 0 30px;
+    /* display: inline-block; */
+    /* border: 1px solid; */
+}
+.inner_ul {
+    background-color: #000;
+    display: none;}
+
+.outer_li:hover .inner_ul {
+    display: block;
+}
+
+.header_etc_box{
+    
+    /* border: 1px solid; */
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: -100px;
+}
+
+
+.header_etc_item{
+    float: left;
+    font-size: 17px;
+    /* border: 1px solid; */
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: white;
+}
+
+.li_install{
+    background-color: green;
+    color: white;
+}
+
+.li_language{
+    color: #000;
+}
+.lan_sel{
+    background-color: #000;
+    color: white;
+    border-color: #000;
+}
+
+.container{
+   border: 1px solid;
+   margin-top: 50px;
+
+}
+
+.nav_box{
+    /* border: 1px solid; */
+    height: 60px;
+    margin-bottom: 10px;
+    /* margin-top: 30px; */
+    /* background-color: #2e638d; */
+}
+
+.nav_L_box{
+    /* float: left; */
+    height: 37px;
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+.nav_L_items{
+    float: left;
+    border-right: 2px solid gray ;
+    color: white;
+    font-size: 13px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    background-color: pink;
+}
+
+.nav_R_box{
+    float: right;
+    height: 37px;
+}
+
+.nav_R_box_txt{
+    height: 37px;
+    float: left;
+    padding: 10px 40px 4px 20px;
+    margin: 2px 0;
+    background-color: #97b4cb;
+}
+
+.feature_box{
+    margin-top: 50px;
+    background-color: pink;
+}
+
+.feature_item_box{
+    height: 390px;
+    background-color: skyblue;
+}

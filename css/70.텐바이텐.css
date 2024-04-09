@@ -1,0 +1,238 @@
+body{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.contents_area{
+    width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+    /* background-color: #fc0175; */
+}
+
+/* ///////////////////////////////////////////// */
+
+.header{
+    /* background-color: pink; */
+    height: 167px;
+}
+
+.menu_box_top_box{
+    background-color: #fc0175;
+    width: 100%;
+    height: auto;
+}
+
+.menu_box_top{
+    /* background-color: aqua; */
+    width: 1140px;
+    margin: 0 auto;
+    /* border: 1px solid; */
+    overflow: hidden;
+}
+
+
+.img{
+    float: left;
+    /* border: 1px solid; */
+    width: calc((100%) / 3);
+    height: 40px;
+}
+
+
+
+.menu_box_top_img1{
+    background-image: url(../img/텐바이텐/탑배너1.jpg);
+    background-color: bisque;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+.menu_box_top_img2{
+    background-image: url(../img/텐바이텐/탑배너2.jpg);
+    background-color: bisque;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.menu_box_top_img3{
+    background-image: url(../img/텐바이텐/탑배너3.jpg);
+    background-color: bisque;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+
+
+.menu_box_middle{
+    /* width: 100%; */
+    height: 127px;
+    /* background-color: aqua; */
+    position: relative;
+}
+
+.logo_box{
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    position: relative;
+}
+
+.logo{
+    background-image: url(../img/텐바이텐/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    top: calc((50% / 2))
+}
+
+.menu_box{
+    text-align: center;
+    width: auto;
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    
+}
+
+.menu{
+    /* background-color: #fc0175; */
+    display: inline-block;
+}
+
+.menu_items{
+    float: left;
+    padding: 10px 13px;
+    font-weight: 700;
+}
+
+.search_box{
+    width: 200px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    /* background-color: bisque; */
+    border: 1px solid;
+    height: 25px;
+    border: 3px solid red;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.search_txt{
+    height: 20px;
+    border: none;
+    outline: none;
+}
+
+.search_icon{
+    background-image: url(../img/텐바이텐/sp_icon.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: right;
+    margin-top: 3px;
+    background-color: red;
+    background-position: right bottom; 
+
+}
+
+
+.util_box{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    border: 1px soild;
+    overflow: hidden;
+    /* background-color: antiquewhite; */
+}
+
+.util{
+    float: left;
+    /* border: 1px solid red; */
+    padding: 5px 10px;
+    font-size: 10px;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.border_right{
+    border-right: 1px solid #ddd;
+}
+
+.menu_box_bottom{
+    /* border: 1px solid; */
+    overflow: hidden;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.menu_ul{
+    display: inline-block;
+    /* background-color: #fc0175; */
+    height: 40px;
+
+}
+
+.menu_li{
+    /* min-width: 1140px; */
+
+    float: left;
+    padding: 10px 10px;
+}
+
+
+.container{
+    width: 100%;
+    height: 1000px;
+    /* border: 3px solid red; */
+    margin-top: 40px;
+}
+
+.main_banner_box{
+    width: 1140px;
+    height: 600px;
+    background-color: yellow;
+}
+
+.just_1_day_box{
+    width: 100%;
+    height: 440px;
+    background-color: aqua;
+    margin: 0 auto;
+}
+
+.just_1_day_ul{
+    width: 1140px;
+    height: 100%;
+    background-color: bisque;
+    margin: 48px auto;
+}
+
+.just_1_day_li_L{
+    float: left;
+    /* border: 1px solid; */
+}
+
+.just_1_day_li_R{
+    background-image: url(../img/텐바이텐/JUST1Day_1.jpg);
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+}

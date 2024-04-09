@@ -1,0 +1,199 @@
+
+body{
+    margin: 0;
+    background: url(../img/반응형/꽃집/background.png) no-repeat fixed;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    margin-top: 0;
+}
+
+#wrap{
+    width: 90%;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid;
+}
+
+/* 헤더 */
+.header{
+    width: 100%;
+    height: 195px;
+    background: #ebdaac url(../img/반응형/꽃집/topbg3.png) no-repeat left / contain;
+}
+
+/* 네비 */
+
+.nav{
+    width: 100%;
+    height: 50px;
+    background: #c51a3a;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.nav_item{
+    height: 100%;
+    display: flex;
+    /* border: 1px solid #fff; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav_item div{
+    height: 50px;
+}
+
+.nav_item a{
+    padding: 0 10px;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    color: #fff;
+    /* border: 1px solid #fff; */
+}
+
+.nav_item a:hover {
+    background: #fff;
+    color: #c51a3a;
+    border-radius: 10px 10px 0 0;
+    font-weight: 900;
+}
+
+
+.main{
+    width: 100%;
+    height: 500px;
+    border: 1px solid skyblue;
+}
+
+.main_top{
+    width: 100%;
+    display: flex;
+}
+
+.top_L{
+    background: url(../img/반응형/꽃집/shop.png) no-repeat center / cover;
+    width: 40%;
+    height: 224px;
+}
+
+.top_R{
+    width: 60%;
+    height: 224px;
+}
+
+.top_R > h4:nth-child(2){
+    color: #c51a3a;
+}
+
+.main{
+   
+}
+
+.main_btm{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+
+.desc{
+    width: calc(100%/4);
+    height: 200px;
+    position: relative;
+    border: 1px solid #ddd;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+.cs{
+    border: 1px solid;
+    background: #c51a3a;
+    padding: 10px;
+    color: #fff;
+}
+
+
+.desc1{
+    background: url(../img/반응형/꽃집/bg1.png) no-repeat left / contain;
+}
+
+
+.desc2{
+    background: url(../img/반응형/꽃집/bg2.png) no-repeat left / contain;
+}
+
+.desc3{
+    background: url(../img/반응형/꽃집/bg3.png) no-repeat left / contain;
+}
+
+.txt_box{
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    left: 0;
+    text-align: right;
+    background: rgba(255,255,255,0.5);
+}
+
+.txt_1{
+    color: #c51a3a;
+}
+
+.txt_2{
+    color: blue;
+}
+
+/* ///////////////////////////////////////// */
+
+
+@media screen and (max-width : 1024px) {
+    
+    .header{
+        width: 100%;
+        height: 195px;
+        position: relative;
+        background: #ece2bf url(../img/반응형/꽃집/topbg2.png) no-repeat left / contain;
+    }
+    
+    .main_top{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top_L{
+        background: url(../img/반응형/꽃집/shop.png) no-repeat center / cover;
+        width: 100%;
+        height: 224px;
+    }
+    
+    .top_R{
+        width: 100%;
+        height: 224px;
+    }
+
+    .main_btm{
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+
+
+    
+}

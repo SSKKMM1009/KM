@@ -1,0 +1,140 @@
+body{ margin: 0;}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.contents_area{
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    /* border: 1px solid skyblue; */
+}
+
+.mb_0{
+    margin-bottom: 0 !important;
+}
+
+/* ////////////////////////////////////////// */
+
+.logo{
+    background: url(../img/google_logo.jpg) no-repeat center / contain;
+    width: 400px;
+    height: 150px;
+    margin: 170px auto 20px;
+    /* border: 1px solid red; */
+}
+
+.IR_logo{
+    /* background-color: red; */
+    display: block;
+    height: 100%;
+    text-indent: -9999px;
+}
+
+.search_box{
+    /* background-color: orange; */
+    text-align: center;
+    width: 700px;
+    height: 50px;
+    box-shadow: 0 0 5px 0 rgba(55,55,55,0.5);
+    position: relative;
+    border-radius: 30px;
+    margin: 0 auto;
+
+}
+
+.search_txt{
+    width: 600px;
+    height: 50px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+.search_icon_box{
+    position: absolute;
+    top: 12.5px;
+    right: 8px;
+}
+
+.search_icon{
+    width: 25px;
+}
+
+.thumb{
+    /* background-color: orange; */
+    border: 1px;
+    overflow: hidden;
+    width: 700px;
+    margin: 100px auto;
+}
+
+.thumb_item{
+    border-radius: 20px;
+    width: calc((100%)/5);
+    box-sizing: border-box;
+    float: left;
+
+}
+
+.btn_ham{
+    background-color: rgb(34, 33, 33);
+    float: right;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    background-color: gray;
+    display: none;
+}
+
+.circle{
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    position: relative;
+    top: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.thumb_item:hover {
+    background-color: gray;
+}
+
+.thumb_item:hover .btn_ham{
+    display: block;
+}
+
+.btn_ham:hover {
+    background-color: rgb(82, 82, 82);
+}
+
+
+.thumb_img{
+    text-align: center;
+    padding-top: 35px;
+}
+
+.thumb_img img{
+    width: 50px;
+    padding-bottom: 10px;
+}
+
+.thumb_title{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    margin: 0 10px 20px;
+}

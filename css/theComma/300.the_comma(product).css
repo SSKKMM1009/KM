@@ -1,0 +1,17 @@
+.sec_body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item{
+    width: calc(100% / 4);
+}
+
+.product_img{
+    width: 100%;
+}
+
+.sec_title{
+    text-align: center;
+    margin: 150px 0 50px ;
+}

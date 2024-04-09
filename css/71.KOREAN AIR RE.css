@@ -1,0 +1,186 @@
+body{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.contents_area{
+    width: 1320px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100%;
+    position: relative;
+    border: 1px solid aqua;
+    box-sizing: border-box;
+}
+
+/* ////////////////////////////////////// */
+
+/* 헤더 */
+
+.header{
+    background-color: pink;
+    width: 100%;
+    height: 110px;
+    
+}
+
+.h_top{
+    width: 100%;
+    height: 50px;
+    
+
+    background-color: yellow;
+}
+
+.h_btm{
+    width: 100%;
+    height: 60px;
+    
+    background-color: skyblue;
+    
+    position: relative;
+
+    text-align: center;
+}
+
+.util_box{
+    border: 1px solid;
+
+}
+
+.util_ul{
+    background-color: violet;
+    float: right;
+}
+
+.event{
+    background: url(../img/KE/header/top_menu/1.선물상자.svg) no-repeat center left;
+}
+
+.qna{
+    background: url(../img/KE/header/top_menu/2.자주묻는질문.svg) no-repeat center left;
+}
+
+.lang{
+    background: url(../img/KE/header/top_menu/3.지구본.svg) no-repeat center left;
+}
+
+
+.util_li{
+    border: 1px solid;
+    float: left;
+    padding-left: 20px;
+    margin-left: 22px;
+}
+
+.logo{
+    background: url(../img/KE/logo/logo--koreanair-pc.png) no-repeat left/contain;
+    width: 162px;
+    height: 100%;
+    float: left;
+}
+
+.logo a{
+    display: block;
+    height: 100%;
+    text-indent: -999px;
+}
+
+.menu_box{
+    height: 100%;
+    background-color: violet;
+    display: inline-block;
+}
+
+.menu_li{
+    height: 100%;
+    line-height: 57px;
+    float: left;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.sub_ul{
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border: 1px solid;
+    overflow: hidden;
+    display: none;
+}
+
+.menu_li:hover{
+    border-bottom: 3px solid blue;
+}
+
+.menu_li:hover .sub_ul{
+    display: block;
+}
+
+.sub_ul li{
+    float: left;
+    width: calc((100% - 1px * 3 * 4 - 10px * 8)/4);
+    border: 1px solid red;
+    height: calc((100%)/2);
+    padding: 10px;
+}
+
+.sub_items{
+    border: 1px solid blue;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0;
+    height: 250px;
+}
+
+.sub_etc{
+    border: 1px solid;
+    height: calc(100%/2);
+}
+
+.search_box{
+    height: 30px;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 0 30px 0 20px;
+    position: absolute;
+    bottom: 5px;
+    right: 100px;
+    background: url(../img/google_search.svg) no-repeat 195px center;
+    overflow: hidden;
+    background-color: #f3f4f8;
+}
+
+.search_icon{
+    height: 100%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background-color: #f3f4f8;
+}
+
+.login_box{
+    border: none;
+    position: absolute;
+    right: 20px;
+    bottom: 8.5px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #00256c;
+}
+
+.login{
+    border: none;
+    background-color: #00256c;
+    color: #fff;
+}

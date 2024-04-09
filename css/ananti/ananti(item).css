@@ -1,0 +1,233 @@
+/* font-family: "Cormorant Garamond", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+/* 스포카한산스네오*/
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* 아리따부리 */
+@font-face {
+    font-family: 'Arita-buri-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') format('woff');
+    /* font-weight: normal; */
+    font-style: normal;
+    font-weight: 100;
+}
+
+
+h1{
+    margin : 0;
+}
+
+p{
+    margin: o;
+}
+
+body{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 900;
+    font-style: normal;
+    /* height: 50000px; */
+    /* background: pink; */
+}
+
+/* //////////////////////////////////// */
+
+.e_header_100{
+  display: block;
+  opacity: 0.3;
+}
+
+.e_header_nav_pan{display: none;}
+
+.item_main{
+  width: 65%;
+  /* height: 5000px; */
+  /* background: skyblue; */
+  margin: 0 auto;
+}
+
+.list_top{
+  padding-top: 80px;
+  padding-left: 5%;
+  width: 100%;
+  height: 150px;
+  /* background: yellow; */
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.list_top div{
+  color: gray;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.list_top_item{
+  width: 120px;
+  height: 20px;
+  border: none;
+  /* position: absolute; */
+}
+
+
+.list_bottom{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  /* background: red; */
+}
+
+.list_bottom_L{
+  width: 45%;
+}
+
+.list_bottom_L_img{
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+  /* background: url(../../img/ananti/eternal/move_your/20240118151402144.116017.jpg) no-repeat center / contain */
+}
+
+.list_bottom_L_img img{
+  width: 100%;
+  height: 100%;
+}
+
+.list_bottom_R{
+  width: 55%;
+}
+
+
+.item_info{
+  line-height: 50px;
+  font-family: 'SpoqaHanSansNeo-Regular';
+
+}
+
+.list_bottom_R_top{
+  width: 100%;
+  /* background: salmon; */
+  border-bottom: 1px solid gray;
+  padding-bottom: 20px;
+}
+
+.list_bottom_R_btm{
+  width: 100%;
+  /* background: salmon; */
+  padding-top: 20px;
+  /* border-top: 1px solid; */
+}
+
+.list_bottom_R_top_title{
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+.tb_title{
+  width: 150px;
+}
+
+.tb_desc{
+  width: calc(100% - 150px);
+}
+
+.border_bot{
+
+}
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+.mySwiper {
+  margin-top: 10px;
+  height: 25%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.count_num{
+  width: 140px;
+  border: 2px solid #949393;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rrr{
+  width: 37px;
+  height: 30px;
+  font-size: 30px;
+  text-align: center;
+  background: #fff;
+  border: none;
+  line-height: 0px;
+  font-family: 'SpoqaHanSansNeo-Regular';
+  outline: none;
+}
+
+.product_count{
+  margin-top: 20px;
+  /* background: pink; */
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 20px 0;
+  font-family: 'SpoqaHanSansNeo-Regular';
+}
+
+.total_price_box{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-family: 'SpoqaHanSansNeo-Regular';
+}
+
+.point_box{
+  width: 100%;
+  background: skyblue;
+  font-family: 'SpoqaHanSansNeo-Regular';
+}
+
+.point{
+  float: right;
+}
