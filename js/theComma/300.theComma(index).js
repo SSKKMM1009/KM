@@ -18,10 +18,10 @@ $(document).ready(function(){
 
     $('.L_btn').click(function(){
         //버튼 막기
-        $('.btn').css({pointerEvents : 'none'})
+        $('.btn').css({PointerEvents : 'none'})
 
         setTimeout(function(){
-            $('.btn').css({pointerEvents : 'auto'})
+            $('.btn').css({PointerEvents : 'auto'})
         },bn_timer)
 
         //나갈판
@@ -45,10 +45,10 @@ $(document).ready(function(){
 
     $('.R_btn').click(function(){
                 //버튼 막기
-        $('.btn').css({pointerEvents : 'none'})
+        $('.btn').css({PointerEvents : 'none'})
 
         setTimeout(function(){
-            $('.btn').css({pointerEvents : 'auto'})
+            $('.btn').css({PointerEvents : 'auto'})
         },bn_timer)
 
         //나갈판
@@ -70,25 +70,23 @@ $(document).ready(function(){
         $('.line').eq(bn_idx % bn_count).addClass('line_active')
     })
 
-    // 버튼 막기, 배너슬라이드, 인디케이터 함수 각각 만들기로 추천
-
     let auto_slide_inter = "";
 
-    function auto_slide(){
-        auto_slide_inter = setInterval(function(){
-            $('.R_btn').trigger('click')
-        },bn_timer + 2000)
-    }
+    // function auto_slide(){
+    //     auto_slide_inter = setInterval(function(){
+    //         $('.R_btn').trigger('click')
+    //     },bn_timer + 2000)
+    // }
 
-    auto_slide()
+    // auto_slide()
 
-    $('.main_banner').hover(function(){
-        clearInterval(auto_slide_inter)
-    }, function(){
-        auto_slide()
-    })
+    // $('main_banner').hover(function(){
+    //     clearInterval(auto_slide_inter)
+    // }, function(){
+    //     auto_slide()
+    // })
 
-    weekly/////////////////////////////////
+    //weekly/////////////////////////////////
 
     
     let weekly_img_arr = [];

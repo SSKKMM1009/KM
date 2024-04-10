@@ -75,16 +75,17 @@
 
 /* weekly/////////////////////////////////////// */
 .main_title{
+
     margin-top: 150px;
     margin-bottom: 80px;
     width: 100%;
     text-align: center;
     font-size: 20px;
     font-weight: 900;
-    letter-spacing: 3px;
 }
 
 .weekly_ranking{
+
     width: 100%;
     display: flex;
     gap: 14px;

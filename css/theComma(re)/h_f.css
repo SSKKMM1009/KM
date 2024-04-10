@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+body{
+    margin: 0;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.contents_area{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    /* border: 2px solid salmon; */
+}
+
+/* top_banner//////////////////////////////////////// */
+
+.top_banner{
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    text-align: center;
+    background: rgb(214, 205, 195);
+
+    position: relative;
+}
+
+.tb_txt{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+/* header */
+
+.header{
+    width: 100%;
+    height: 300px;
+}
+
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 100px;
+    background: url(../../img/theComma/logo.jpg) no-repeat center;
+}
+
+.logo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -999999px;
+}
+
+.nav{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav_item{
+    padding: 10px 20px;
+}
+
+.nav_pan{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 300px;
+    background: skyblue;
+}
+
+.pan_item{
+    background: pink;
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

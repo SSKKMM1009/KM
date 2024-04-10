@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.contents_area{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+/* //////////////////////////////////////// */
+
+/* 헤더 */
+
+.header{
+    height: 170px;
+    background-color: pink;
+}
+
+.logo{
+    background: orange url(../img/subway/logo_w.png) no-repeat center / contain;
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.logo > .IR_method{
+    display: block;
+    background-color: red;
+}

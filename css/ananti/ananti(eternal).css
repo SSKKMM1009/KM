@@ -21,6 +21,9 @@
 }
 
 
+.dis_none{
+  display: none;
+}
 h1{
     margin : 0;
 }
@@ -1307,22 +1310,6 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   .move_top_eternal{
     bottom: 0px;
     right: 0;
@@ -1334,3 +1321,221 @@ body{
     padding: 5px;
     box-sizing: border-box;
   }
+
+  .sm_menu_eternal{
+    background: #000;
+    color: #fff;
+  }
+
+
+  @media screen  and (max-width: 1024px) {
+
+    .e_header_short{
+      display: none;
+    }
+
+    .sm_menu{
+      display: flex;
+    }
+    
+      .e_aside{
+        display: none;
+      }
+
+      .main{
+        width: 100%;
+      }
+
+      .e_header_short{
+        width: 100%;
+      }
+
+      .eternal_journey_title_L {
+        left: 0;
+        padding-left: 30px;
+        top: 120px;
+        line-height: 70px;
+      }
+
+      .eternal_journey_title_R {
+        left: 0;
+        line-height: 90px;
+        padding-left: 30px;
+      }
+
+      .eternal_journey_desc_L {
+        left: 0;
+        font-size: 15px;
+        padding-left: 30px;
+      
+      }
+      .eternal_journey_desc_L p{
+       margin: 0;
+      }
+
+      
+      .eternal_journey_desc_R {
+        padding-left: 30px;
+        left: 0;
+        font-size: 15px;
+      }
+
+      .fromto_box {
+        width: 90%;
+        left: 20px;
+      }
+
+  .sec_desc h1 {
+    top: 25%;
+  }
+
+  .dis_none{
+    display: block;
+  }
+
+  .eternal_journey_title h1{
+    font-size: 50px;
+  }
+
+  .eternal_journey_desc_R P{
+    margin: 0;
+  }
+
+  .CHABUAD_img_box{
+    top: 52%;
+  }
+
+  .mySwiper2{
+    height: 65%;
+    top: 28px;
+  }
+
+  .eternal_journey_title_L {
+    top: 110px;
+    line-height: 70px;
+  }
+
+  .last{
+  top: 260px;
+  line-height: 30px;
+  }
+
+  .move_top_eternal {
+    right: 20px;
+    }
+}
+  
+
+@media screen  and (max-width: 768px) {
+  .sec_desc h1{
+    left: 80px;
+  }
+
+  .sec_desc div:nth-child(2) {
+    left: 9%;
+    font-size: 13px;
+  }
+
+  .aaa{
+    width: 80%;
+    top: 50%;
+    left: -10px;
+  }
+
+  .eternal_journey_left, .eternal_journey_right{
+    width: 50vw;
+  }
+
+  .eternal_journey_title h1 {
+    font-size: 40px;
+}
+
+.eternal_journey_title{
+  line-height: 70px;
+}
+
+.eternal_journey_desc{
+  padding-left: 10px;
+  font-size: 13px;
+  word-wrap: break-word;
+overflow-wrap: break-word;}
+
+.eternal_journey_desc_L{
+  letter-spacing: -1px;
+}
+
+.aaa .per_swiper{
+  top: -37px;
+}
+
+.mySwiper2 {
+  top: -12px;
+  width: 110%;
+  height: 72%;
+  left: 25px;
+}
+
+.fromto_box {
+  width: 100%;
+  left: 0px;
+}
+
+.ft_line_white {
+  background: #fff;
+  width: 25%;
+}
+
+.per_from{
+  left: 40px;
+}
+
+.p_line{
+  width: 100px;
+}
+
+.italy{
+  display: none;
+}
+
+.eternal_section1 .fromto_box_long{
+  width: 60%;
+    left: 80px;
+}
+
+.eternal_section1 .fromto_box_long .ft_line{
+  width: 65%;
+}
+
+
+.CHABUAD_img_box {
+  top: 35%;
+  left: -4px;
+  position: absolute;
+  width: 72%;
+  height: 35%;
+  /* border: 1px solid; */
+}
+
+.mySwiper2 {
+  top: -147px;
+  width: 110%;
+  height: 72%;
+  left: 25px;
+}
+
+.CH_FR{
+  width: 80%;
+}
+
+.CH_L{
+  width: 60px;
+}
+
+.JE{
+  left: 30px;
+}
+}
+
+@media screen  and (max-width: 590px) {
+  
+}

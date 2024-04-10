@@ -7,7 +7,6 @@ $(document).ready(function(){
         height : one_page_H
     })
 
-
     $('.one_page').on('mousewheel DOMMouseScroll', function(){
         let dir = event.wheelDelta // 음수면 아래, 양수면 위
         let o_top;
@@ -15,11 +14,34 @@ $(document).ready(function(){
         if(dir < 0) { 
             if($(this).next().length > 0) { 
                 o_top = $(this).next().offset().top
+
+                for(let i = 2 ; i < 19; i++){
+                    $(`.one_page${i} .reser_box`).css({
+                        bottom : '-100%',
+                        display : 'flex'
+                    })
+
+                    $(`.one_page${i} .let_reserv_box`).css({
+                        left : '-3.5%',
+                        display : 'flex'
+                    })
+                }
             }
         }
         else if(dir > 0) { 
             if($(this).prev().length > 0) {
                 o_top = $(this).prev().offset().top
+
+                for(let i = 2 ; i < 19; i++){
+                    $(`.one_page${i} .reser_box`).css({
+                        bottom : '-100%',
+                        display : 'flex'
+                    })
+                    $(`.one_page${i} .let_reserv_box`).css({
+                        left : '-3.5%',
+                        display : 'flex'
+                    })
+                }
             }
         }
         
@@ -29,7 +51,99 @@ $(document).ready(function(){
     });
 
 
+       $(window).resize(function(){
+        if(window.innerWidth > 1024){
+            $('.one_page').on('mousewheel DOMMouseScroll', function(){
+                let dir = event.wheelDelta // 음수면 아래, 양수면 위
+                let o_top;
+                // // 휠을 아래로 내렸음. 다음 섹션으로 부드럽게 이동
+                if(dir < 0) { 
+                    if($(this).next().length > 0) { 
+                        o_top = $(this).next().offset().top
+        
+                        for(let i = 2 ; i < 19; i++){
+                            $(`.one_page${i} .reser_box`).css({
+                                bottom : '-100%',
+                                display : 'flex'
+                            })
+        
+                            $(`.one_page${i} .let_reserv_box`).css({
+                                left : '-3.5%',
+                                display : 'flex'
+                            })
+                        }
+                    }
+                }
+                else if(dir > 0) { 
+                    if($(this).prev().length > 0) {
+                        o_top = $(this).prev().offset().top
+        
+                        for(let i = 2 ; i < 19; i++){
+                            $(`.one_page${i} .reser_box`).css({
+                                bottom : '-100%',
+                                display : 'flex'
+                            })
+                            $(`.one_page${i} .let_reserv_box`).css({
+                                left : '-3.5%',
+                                display : 'flex'
+                            })
+                        }
+                    }
+                }
+                
+                $('html, body').stop(true).animate({
+                    scrollTop: o_top
+                }, 500)
+            });
+        }
 
+        else if(window.innerWidth <= 1024){
+            $('.one_page').on('mousewheel DOMMouseScroll', function(){
+                let dir = event.wheelDelta // 음수면 아래, 양수면 위
+                let o_top;
+                // // 휠을 아래로 내렸음. 다음 섹션으로 부드럽게 이동
+                if(dir < 0) { 
+                    if($(this).next().length > 0) { 
+                        o_top = $(this).next().offset().top
+        
+                        for(let i = 1 ; i < 16; i++){
+                            $(`.one_page${i} .reser_box`).css({
+                                bottom : '-100%',
+                                display : 'flex'
+                            })
+        
+                            $(`.one_page${i} .let_reserv_box`).css({
+                                left : '-3.5%',
+                                display : 'flex'
+                            })
+                        }
+                    }
+                }
+                else if(dir > 0) { 
+                    if($(this).prev().length > 0) {
+                        o_top = $(this).prev().offset().top
+        
+                        for(let i = 1 ; i < 19; i++){
+                            $(`.one_page${i} .reser_box`).css({
+                                bottom : '-100%',
+                                display : 'flex'
+                            })
+                            $(`.one_page${i} .let_reserv_box`).css({
+                                left : '-3.5%',
+                                display : 'flex'
+                            })
+                        }
+                    }
+                }
+                
+                $('html, body').stop(true).animate({
+                    scrollTop: o_top
+                }, 500)
+            });
+        }
+       })
+
+        
 
 
     let one_page_length = $('.one_page').length
@@ -157,6 +271,42 @@ let move_top_item = `<div class="move_top">
 
 
 
+
+
+    $(window).resize(function(){
+
+   
+if(window.innerWidth > 1024){
+    $('.let_reserv_box').click(function(){
+        $('.reser_box').css({
+            bottom : '10%',
+            transition : 'all 0.5s'
+        })
+
+        $('.let_reserv_box').css({
+            display : 'none'
+        })
+
+    })
+}
+
+
+else if(window.innerWidth <= 1024){
+    $('.let_reserv_box').click(function(){
+        $('.reser_box').css({
+            display : 'flex',
+            bottom : '17%',
+            transition : 'all 0.5s'
+        })
+
+        $('.let_reserv_box').css({
+            display : 'none'
+        })
+
+    })
+}
+
+})
 
 
 

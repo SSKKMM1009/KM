@@ -19,10 +19,11 @@ body{
     
 }
 
+
 .one_page_box{
     width: 100%;
     height: 100%;
-    background: red;
+    /* background: red; */
     position: absolute;
     top: 53px;
 }
@@ -30,12 +31,15 @@ body{
 
 .one_page{
     width: 100%;
-    /* height: 960px; */
+    height: 100vh;
     position: relative;
 }
 
 .one_page1{
-    background: url(../../img/ananti/gangnam/map-pc.jpg) no-repeat center / contain;
+    background: url(../../img/ananti/gangnam/map-pc.jpg) no-repeat;
+    background-position-x: -200px;
+    background-position-y:  70px;
+    background-size: cover;
     /* transform: scale(1.1) */
 }
 
@@ -72,7 +76,33 @@ body{
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
+}
+
+
+.one_page1 .reser_box{
     display: flex;
+}
+
+.one_page2 .reser_box,
+.one_page3 .reser_box,
+.one_page4 .reser_box,
+.one_page5 .reser_box,
+.one_page6 .reser_box,
+.one_page7 .reser_box,
+.one_page8 .reser_box,
+.one_page9 .reser_box,
+.one_page10 .reser_box,
+.one_page11 .reser_box,
+.one_page12 .reser_box,
+.one_page13 .reser_box,
+.one_page14 .reser_box,
+.one_page15 .reser_box,
+.one_page16 .reser_box,
+.one_page17 .reser_box,
+.one_page18 .reser_box
+{
+    bottom : -100%;
+    display : flex
 }
 
 .reser_box img{
@@ -126,13 +156,13 @@ body{
     font-weight: 900;
     font-size: 40px;
     color: #fff;
-    line-height: 50px;
+    line-height: 55px;
 }
 
 .one_page_txt_box_btm{
-    margin-top: 200px;
+    margin-top: 160px;
     color: #fff;
-    line-height: 30px;
+    line-height: 45px;
 }
 
 .btm_top{
@@ -161,13 +191,12 @@ body{
 }
 
 .one_page_img_box{
-    top: 25%;
-    right: 11%;
+    top: 24%;
+    right: 8%;
     position: absolute;
     width: 42%;
     border-radius: 50px 0 0 0;
     overflow: hidden;
-
 }
 
 .one_page_img_box img{
@@ -185,7 +214,6 @@ body{
     position: absolute;
     top: 77%;
     left: -3.5%;
-    display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -193,6 +221,34 @@ body{
     background: rgb(89,207,190);
     color: #fff;
 }
+
+.one_page1 .let_reserv_box{
+    left : -10%;
+    display: flex;
+}
+
+.one_page2 .let_reserv_box,
+.one_page3 .let_reserv_box,
+.one_page4 .let_reserv_box,
+.one_page5 .let_reserv_box,
+.one_page6 .let_reserv_box,
+.one_page7 .let_reserv_box,
+.one_page8 .let_reserv_box,
+.one_page9 .let_reserv_box,
+.one_page10 .let_reserv_box,
+.one_page11 .let_reserv_box,
+.one_page12 .let_reserv_box,
+.one_page13 .let_reserv_box,
+.one_page14 .let_reserv_box,
+.one_page15 .let_reserv_box,
+.one_page16 .let_reserv_box,
+.one_page17 .let_reserv_box,
+.one_page18 .let_reserv_box
+{
+    left : -10%;
+    display: flex;
+}
+
 
 .move_top{
     position: absolute;
@@ -203,3 +259,382 @@ body{
     background: rgb(208, 233, 244);
     border-radius: 50%;
 }
+
+/* //////////////////////////////////////////////////////// */
+
+
+@media screen and (max-width: 1440px)  {
+    .nav_items{
+        font-size: 14px;
+    }
+}
+
+@media screen  and (max-width: 1062px) {
+    .reser_L{
+        padding-right: 80px;
+    }
+
+    .let_reserv_box{
+        font-size: 19px;
+        left: -2.5%;
+        width: 12%;
+        height: 77px;
+    }
+
+    .one_page_img_box{
+        right: 2%;
+        width: 40%;
+        top : 26%
+    }
+
+    .one_page_txt_box{
+        left: 10%;
+        top: 28%;
+    }
+}
+
+
+
+@media screen  and (max-width: 1024px) {
+    .let_reserv_box{
+        display: none;
+    }
+    .one_page_box{
+        top: 0;
+    }
+    .move_top{
+        display: none;
+    }
+
+    .top_line{
+        display: none;
+    }
+    .one_page1{
+        background: url(../../img/ananti/gangnam/map-pc.jpg) no-repeat;
+        background-position-x: -688px;
+        background-position-y: -16px;
+        background-size: cover;
+    }
+    .one_page1 .reser_box {
+        bottom : -100%
+    }
+
+    .reser_L{
+        padding :10px;
+        line-height: 25px;
+    }
+
+    .one_page1 .let_reserv_box{
+        font-size: 17px;
+        display: flex;
+        width: 11%;
+        top: 73%;
+        font-size: 18px;
+        height: 60px;
+        left: -2.5%;
+    }
+
+    .one_page_txt_box{
+        left: 3%;
+        top : 10%
+    }
+
+    .one_page_txt_box_top{
+       font-size: 33px;
+    }
+
+    .one_page_txt_box_btm{
+        margin-top: 530px;
+     }
+
+     .plus_beat_box{
+        top: 75%;
+        left: 90%;
+     }
+
+     .one_page_img_box{
+        right: 12%;
+        width: 79%;
+        top: 20%;
+     }
+
+
+
+     .let_reserv_box{
+        left: -4.5%;
+        top: 55%;
+        display: flex;
+        font-size: 19px;
+        left: -2.5%;
+        width: 12%;
+        height: 70px;
+     }
+
+}
+
+@media screen  and (max-width: 960px) {
+    
+    .etenrnal_dis_none{
+        display: none;
+    }
+    .one_page_txt_box_top{
+        font-size: 30px;
+    }
+
+    .one_page1{
+        background-position-x: -960px;
+
+    }
+
+}
+
+@media screen  and (max-width: 890px) {
+
+    .reser_box{
+        font-size: 13px;
+    }
+
+    .one_page1 .let_reserv_box{
+        font-size: 17px;
+        display: flex;
+        width: 11%;
+        top: 73%;
+        font-size: 16px;
+        height: 60px;
+        left: -2.5%;
+    }
+
+    .let_reserv_box{
+        top: 50%;
+        width: 12%;
+        font-size: 18px;
+    }
+
+    .one_page_txt_box_top{
+        font-size: 29px;
+    }
+
+}
+
+@media screen  and (max-width: 840px) {
+    .let_reserv_box{
+        top: 50%;
+        width: 13%;
+        font-size: 18px;
+    }
+    .reser_box{
+        font-size: 13px;
+    }
+    .one_page_txt_box_top{
+        font-size: 28px;
+    }
+
+    .one_page1 .let_reserv_box {
+        width: 12%;
+    }
+}
+
+@media screen  and (max-width: 812px) {
+    .one_page_img_box{
+        right: 9%;
+    }
+    .let_reserv_box{
+        top: 46%;
+        width: 13%;
+        font-size: 18px;
+    }
+    .reser_box{
+        font-size: 13px;
+    }
+    .one_page_txt_box_top{
+        font-size: 27px;
+    }
+}
+
+@media screen  and (max-width: 785px) {
+    .reser_box{
+        font-size: 13px;
+    }
+    .one_page_txt_box_top{
+        font-size: 26px;
+    }
+}
+
+@media screen  and (max-width: 752px) {
+    .one_page1 .let_reserv_box {
+        width: 13%;
+    }
+
+    .reser_box{
+        font-size: 13px;
+    }
+    .one_page_txt_box_top{
+        font-size: 25px;
+    }
+
+    .one_page_txt_box_btm {
+        margin-top: 500px;
+    }
+}
+
+@media screen  and (max-width: 668px) {
+    .one_page1 .let_reserv_box {
+        width: 14%;
+    }
+    .reser_box{
+        font-size: 13px;
+    }
+    .one_page_txt_box_top{
+        font-size: 21px;
+    }
+
+    .one_page1_txt_box{
+        top: 3%;
+        left: 10%;
+    }
+}
+
+
+@media screen  and (max-width: 510px) {
+    .one_page1 .let_reserv_box {
+        width: 18%;
+    }
+    .one_page1_txt_box{
+        top: 3%;
+        left: 10%;
+    }
+
+    .let_reserv_box{
+        width: 21%;
+        font-size: 18px;
+    }
+
+
+    .reser_box{
+        font-size: 13px;
+    }
+    .one_page_txt_box_top{
+        font-size: 16px;
+    }
+
+    .one_page_img_box{
+        right: 5%;
+        width: 90%;
+        top: 20%;
+        height: 35%;
+    }
+
+    .plus_beat_box{
+        top: 75%;
+        left: 82%;
+    }
+}
+
+@media screen  and (max-width: 480px) {
+    .one_page1 .let_reserv_box {
+        width: 19%;
+    }
+    .one_page1_txt_box{
+        top: 3%;
+        left: 10%;
+    }
+
+
+    .one_page_txt_box{
+        top: 5%;
+    }
+    .reser_box{
+        font-size: 13px;
+    }
+
+    .let_reserv_box {
+        height: 52px;
+        left: -6%;
+
+    }
+    .one_page_txt_box_btm{
+        margin-top: 450px;
+    }
+
+    .one_page_txt_box_top{
+        font-size: 16px;
+    }
+
+    .one_page_img_box {
+        width: 90%;
+        top: 13%;
+        font-size: 16px;
+    }
+}
+
+
+@media screen  and (max-width: 449px) {
+    .one_page1 .let_reserv_box {
+        width: 21%;
+    }
+    .one_page1_txt_box{
+        top: 0%;
+        left: 10%;
+    }
+
+    .one_page1_txt1 {
+        font-weight: 900;
+        font-size: 400%;
+    }
+
+    .one_page1_txt2 {
+        font-size: 165%;
+    }
+
+    .reser_box{
+        font-size: 13px;
+    }
+
+    .one_page_txt_box_top{
+        font-size: 16px;
+    }
+}
+
+@media screen  and (max-width: 320px) {
+    .one_page1 .let_reserv_box {
+        width: 30%;
+    }
+
+    .let_reserv_box{
+        left: -6.5%;
+    }
+}
+
+
+@media screen  and (max-width: 280px) {
+    .one_page1 .let_reserv_box {
+        width: 33%;
+    }
+
+    .let_reserv_box{
+        left: -6.5%;
+    }
+
+    .one_page1_txt_box{
+        top: 10%;
+        left: 10%;
+    }
+
+    .one_page1_txt1 {
+        font-weight: 900;
+        font-size: 300%;
+    }
+
+    .one_page1_txt2 {
+        font-size: 135%;
+    }
+
+    .one_page1_txt3 {
+        font-size: 160%;
+    }
+
+
+}
+
+
+

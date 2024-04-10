@@ -1,0 +1,152 @@
+body{margin: 0;}
+
+#header
+    {background-color:pink;
+     width: 100%;   
+    height: 60px;
+    line-height: 60px;
+    }
+
+    /* 헤더는 높이 잡고 있어야 편해 오버플로우 주지말아야 나중에 배너 펼쳐질때 유리 */
+
+.logo{
+    width: 250px;
+    height: 100%;
+    line-height: 60px;  
+    /* 비효율 */
+    /* border: 3px solid; */
+    background-color: #87ceeb;
+    text-align: center;
+    float: left;
+}
+
+.menu{
+
+    float: right;
+    list-style: none;
+    margin:0 ;
+    background-color: f0f8ff;
+}
+
+.menu_li{
+    height: 60px;
+    float: left;
+    padding-right: 40px;
+    background-color: #ddd;
+}
+
+.menu_pad{padding-left: 40px;}
+
+.main_banner{
+    width: 100%;
+    height: 600px;
+    background-color: #59dcce;
+}
+
+#container{
+    width: 100%;
+    height: 500px;
+ 
+}
+
+.best{
+    width: 1100px;
+    margin: 0 auto;
+    
+}
+
+.best_ul{
+    list-style: none;
+    height: 60px;
+    
+}
+
+.best_font{
+    line-height: 50px;
+    /* border: 1px solid !important; */
+    height: 50px !important;
+    background-color: white !important;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.best_li{
+    float: right;
+    width: calc((100% - 1px*4*2)/4);
+    height: 200px;
+    border: 10px solid white;
+    box-sizing: border-box;
+    background-color: #ee82ee;
+}
+
+.long_banner{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 300px;
+    background-color: #708090;
+
+}
+
+#New_Arrival{
+    width: 100%;
+    height: 500px;
+}
+
+.New_Arrival_1{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.NA_ul{
+    list-style: none;
+    height: 60px;
+}
+
+.NA_li{
+    float: right;
+    width: calc((100% - 1px*3*2)/3);
+    height: 200px;
+    border: 10px solid white;
+    box-sizing: border-box;
+    background-color: #ee82ee;
+}
+
+.NA_font{
+    background-color: white !important;
+    font-size: 22px;
+    font-weight: bold;
+    height: 50px;
+
+}
+
+#footer{
+    width: 100%;
+    height: 300px;
+}
+
+.AD{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.AD_ul{
+    list-style: none;
+    height: 60px;
+}
+
+.AD_li{
+    float: right;
+    width: calc((100% - 1px*3*2)/3);
+    height: 200px;
+    border: 10px solid white;
+    box-sizing: border-box;
+    background-color: #ee82ee;
+}
+
+.AD_font{
+    background-color: white !important;
+    font-size: 22px;
+    font-weight: bold;
+    height: 50px;
+    
+}

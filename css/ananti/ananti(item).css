@@ -20,7 +20,9 @@
     font-weight: 100;
 }
 
-
+html{
+  overflow-x: hidden;
+}
 h1{
     margin : 0;
 }
@@ -29,6 +31,10 @@ p{
     margin: o;
 }
 
+.item_page_logo div{
+  width: 100%;
+  margin: 0 auto;
+}
 body{
     font-family: "Cormorant Garamond", serif;
     font-weight: 900;
@@ -39,12 +45,19 @@ body{
 
 /* //////////////////////////////////// */
 
-.e_header_100{
-  display: block;
-  opacity: 0.3;
+.e_util_box{
+  right: -480px;
 }
 
-.e_header_nav_pan{display: none;}
+.item_page_logo{display: none;}
+
+.e_header_100{
+  display: block;
+  /* opacity: 0.3; */
+  background: #fff;
+}
+
+/* .e_header_nav_pan{display: none;} */
 
 .item_main{
   width: 65%;
@@ -80,8 +93,8 @@ body{
 
 
 .list_bottom{
-  width: 100%;
-  height: 500px;
+  /* width: 100%;
+  height: 500px; */
   display: flex;
   /* background: red; */
 }
@@ -163,7 +176,7 @@ body{
 
 .mySwiper {
   margin-top: 10px;
-  height: 25%;
+  height: 15%;
   box-sizing: border-box;
   padding: 10px 0;
 }
@@ -224,10 +237,243 @@ body{
 
 .point_box{
   width: 100%;
-  background: skyblue;
   font-family: 'SpoqaHanSansNeo-Regular';
 }
 
 .point{
   float: right;
+}
+
+.use_mb{
+  margin-bottom: 30px;
+}
+
+
+
+@media screen  and (max-width: 1024px) {
+
+
+  .item_main{
+    width: 82%;
+  }
+
+  .tb_desc{
+    font-size: 14px;
+
+    word-wrap: break-all;
+
+    overflow-wrap: break-word;
+  }
+}
+
+@media screen  and (max-width: 768px) {
+  .item_main{
+    width: 100%;
+  }
+
+  .list_top{
+    padding-top: 10px;
+  }
+
+  .list_bottom{
+    display: block;
+  }
+
+  .list_bottom_R{
+    width: 100%;
+    padding-top: 50px;
+  }
+
+  .item_info{
+    padding-left: 80px;
+    line-height: 30px;
+  }
+
+  .list_bottom_R_btm, .list_bottom_R_top{
+    padding: 0;
+  }
+
+  .list_bottom_R_brand{
+    padding-left: 80px;
+  }
+
+  .list_bottom_R_top_title{
+    padding-left: 80px;
+  }
+
+  .product_count{
+    padding-left: 80px;
+  }
+  .total_price_box{
+    padding: 0 80px;
+  }
+
+  .list_bottom_L{
+    position: relative;
+    width: 100%;
+  }
+
+  .position_move{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .point{
+    margin-bottom: 30px;
+  }
+
+  #wrap .e_header_100{
+    display: none;
+  }
+
+  .item_page_logo{
+    display: block;
+    width: 100%;
+    height: 100px;
+    position: relative;
+  }
+
+  
+  .item_page_logo img{
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    left: 240px;
+    top: 10px;
+  }
+
+  .list_top{
+    padding: 50px 0 0 80px;
+    height: 50px;
+  }
+
+}
+
+@media screen  and (max-width: 480px) {
+
+.item_page_logo img {
+  left: 140px;
+  top: 20px;
+  width: 200px;
+  height: 30px;
+}
+
+.item_info{
+  padding: 0 0 0 30px;
+  font-size: 14px;
+}
+
+.list_bottom_R_brand{
+  padding-left: 30px;
+}
+
+.list_bottom_R_top_title{
+  padding-left: 30px;
+  font-size: 25px;
+}
+
+.product_count{
+  padding: 0 10px 0 30px;
+}
+
+.total_price_box{
+  padding-left: 30px;
+}
+
+.list_top {
+  padding: 50px 0 0 50px;
+  height: 30px;
+}
+
+.list_top div {
+  font-size: 15px;
+  font-weight: 600;
+}
+}
+
+@media screen  and (max-width: 320px) {
+  .item_page_logo{
+    height: 60px;
+  }
+
+.item_page_logo img {
+  left: 90px;
+  top: 20px;
+  width: 130px;
+}
+
+.list_top {
+    padding: 10px 0 0 33px;
+    height: 35px;
+}
+
+.list_top div {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.item_info {
+  padding: 0 0 0 20px;
+  font-size: 13px;
+}
+
+.list_bottom_R_brand {
+  padding-left: 20px;
+}
+
+.list_bottom_R_top_title {
+  padding-left: 20px;
+  font-size: 23px;
+}
+
+.tb_desc {
+  font-size: 12px;
+}
+
+.count_num {
+  width: 120px;
+  gap: 0px;
+  height: 30px;
+}
+
+.rrr {
+  height: 20px;
+  font-size: 20px;
+}
+
+.product_count {
+  padding: 5px 10px 5px 20px;
+}
+
+.total_price_box {
+  padding : 0 10px 0 20px;
+  font-size: 13px;
+}
+
+.point {
+    font-size: 12px;
+    padding-right: 10px;
+}
+}
+
+@media screen  and (max-width: 280px) {
+  .item_page_logo img {
+    left: 71px;
+    top: 10px;
+    width: 120px;
+}
+
+.list_bottom_R{
+  padding: 0;
+}
+
+.tb_title{
+  width: 80px;
+  font-size: 12px;
+}
+
+.tb_desc{
+  font-size: 11px;
+}
 }

@@ -1,4 +1,52 @@
 $(document).ready(function(){
+    let last_scroll = 0;
+
+     $(window).scroll(function(){
+
+         let s_top = $(this).scrollTop()
+ 
+         // console.log("최근 스크롤값 : ", last_scroll, ",스크롤탑값 : ",s_top)
+ 
+     
+         //내려갈때
+         if(s_top > last_scroll){
+ 
+             $('.sm_menu').css({
+                 opacity : 0,
+                 transition : "all 0.05s" 
+             })
+
+
+ 
+         }
+ 
+         //올라갈때
+         else if(s_top < last_scroll){
+ 
+             $('.sm_menu').css({
+                 opacity : 1,
+                 display : 'flex',
+                 position : 'fixed',
+                 marginTop : 0,
+                 transition : "all 0.5s" 
+             })
+
+            //  var scale = 1;
+            //  beat = setInterval(function(){
+            //  scale = scale == 1 ? 1.1 : 1
+            //  $('.sm_eternal').css('transform', 'scale('+scale+')')
+            //  }, 400, 'linear')
+
+         }
+         
+         last_scroll = s_top;
+         
+     })
+
+     $('.sm_menu_go_top').click(function(){
+        $('html').animate({scrollTop : 0},1000)
+     })
+
 
    let eternal_h = $(window).height()
 
@@ -141,5 +189,7 @@ $(document).ready(function(){
 
         $('.divider_L_dn').css({display : 'block'})
     })
+
+    
    
 })

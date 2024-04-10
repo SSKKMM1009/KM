@@ -27,7 +27,7 @@ $(document).ready(function(){
 
     // let item_img = `<img src="${ITEM_LIST[cate_no][item_no].src}" alt="">`
 
-    let item_slide = ` <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+    let item_slide = ` <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2 position_move">
                           <div class="swiper-wrapper">
 
                             <div class="swiper-slide">
@@ -48,7 +48,7 @@ $(document).ready(function(){
                           <div class="swiper-button-prev"></div>
                         </div>
                         
-                        <div thumbsSlider="" class="swiper mySwiper">
+                        <div thumbsSlider="" class="swiper mySwiper use_mb">
                           <div class="swiper-wrapper">
                             <div class="swiper-slide">
                               <img src="${ITEM_LIST[cate_no][item_no].src}" onerror="this.style.display='none'"  />

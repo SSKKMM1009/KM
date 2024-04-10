@@ -1,5 +1,33 @@
 $(document).ready(function(){
 
+      
+
+    $(window).scroll(function(){
+        let banner_off_top = $('.main_banner').offset().top;
+
+        let package_off_top = $('.package').offset().top;
+        let banner_s_top = $(window).scrollTop();
+
+        if(banner_off_top = banner_s_top + 120){
+            $('.banner_title').animate({
+                top : '150px'
+            },1000)
+
+            $('.banner_desc').delay(500).animate({
+                top : '300px'
+            },1000)
+        }
+
+        console.log(package_off_top , banner_s_top)
+
+        if(package_off_top = banner_s_top + 200){
+
+            $('.swiper-wrapper .sroll_r').animate({
+                right : 0
+            },1000)
+        }
+
+    })
     
     // const $body = document.querySelector('body');
     // function preventScroll(e) {
@@ -55,6 +83,7 @@ $(document).ready(function(){
     })
 
     $('.sm_menu_ham').click(function(){
+        $('.blur_box').css({display:'block'})
         const $body = document.querySelector('.blur_box');
         function preventScroll(e) {
             e.preventDefault();
@@ -98,7 +127,7 @@ $(document).ready(function(){
             right : '-402px'
         },500 , 'linear')
 
-
+        $('.blur_box').css({display:'none'})
     
     })
 
@@ -235,11 +264,21 @@ $('.banner').eq(0).css({left: '-2px'})
         })
     })
 
-    $('.e_o_sec_main').mouseenter(function(){
-        $('.e_o_sec_main img').css({
+    $('.e_o_sec_item_img').hover(function(){
+        $('.e_o_sec_item_img img').css({
             scale : 1.2
         })
+    },function(){
+        $('.e_o_sec_item_img img').css({
+            scale : 1
+        })
     })
+
+    // $('.e_o_sec_main').mouseenter(function(){
+    //     $('.e_o_sec_main img').css({
+    //         scale : 1.2
+    //     })
+    // })
 
 
 
@@ -292,8 +331,6 @@ $('.banner').eq(0).css({left: '-2px'})
 
         let tmp2 = $('.sm_short_btm > .sm_short_btm_items').eq(3).position().top + $('.sm_short_btm > .sm_short_btm_items').eq(3).height() - $('.sm_long_btm').height();
 
-        console.log(tmp1, etc_s_top1, etc_s_top)
-
   
 
        if(etc_top1 <= etc_s_top){
@@ -315,36 +352,36 @@ $('.banner').eq(0).css({left: '-2px'})
 
 /////////////////////////////////////////////////////////////////////////
 
-if(etc_s_top1 <= etc_s_top){
+        if(etc_s_top1 <= etc_s_top){
 
-    $('.sm_long_top').stop(true).animate({
-     top : tmp1
- },1000 ,'linear')
-}   
+            $('.sm_long_top').stop(true).animate({
+            top : tmp1
+        },1000 ,'linear')
+        }   
 
-if(etc_s_top1 >= etc_s_top){
+        if(etc_s_top1 >= etc_s_top){
 
-    $('.sm_long_top').stop(true).animate({
-     top : 0
- },1000 ,'linear')
-}   
-
-
+            $('.sm_long_top').stop(true).animate({
+            top : 0
+        },1000 ,'linear')
+        }   
 
 
-if(etc_sb_top1 <= etc_s_top){
 
-    $('.sm_long_btm').stop(true).animate({
-     top : tmp2
- },1000 ,'linear')
-}   
 
-if(etc_sb_top1 >= etc_s_top){
+        if(etc_sb_top1 <= etc_s_top){
 
-    $('.sm_long_btm').stop(true).animate({
-     top : 0
- },1000 ,'linear')
-}  
+            $('.sm_long_btm').stop(true).animate({
+            top : tmp2
+        },1000 ,'linear')
+        }   
+
+        if(etc_sb_top1 >= etc_s_top){
+
+            $('.sm_long_btm').stop(true).animate({
+            top : 0
+        },1000 ,'linear')
+        }  
 
 
 
@@ -371,11 +408,12 @@ if(etc_sb_top1 >= etc_s_top){
      let last_scroll = 0;
 
      $(window).scroll(function(){
- 
+
          let s_top = $(this).scrollTop()
  
          // console.log("최근 스크롤값 : ", last_scroll, ",스크롤탑값 : ",s_top)
  
+     
          //내려갈때
          if(s_top > last_scroll){
  
@@ -383,6 +421,8 @@ if(etc_sb_top1 >= etc_s_top){
                  opacity : 0,
                  transition : "all 0.05s" 
              })
+
+
  
          }
  
@@ -396,10 +436,21 @@ if(etc_sb_top1 >= etc_s_top){
                  marginTop : 0,
                  transition : "all 0.5s" 
              })
+
+            //  var scale = 1;
+            //  beat = setInterval(function(){
+            //  scale = scale == 1 ? 1.1 : 1
+            //  $('.sm_eternal').css('transform', 'scale('+scale+')')
+            //  }, 400, 'linear')
+
          }
          
          last_scroll = s_top;
          
+     })
+
+     $('.sm_menu_go_top').click(function(){
+        $('html').animate({scrollTop : 0},1000)
      })
 
 
