@@ -850,6 +850,7 @@ body{
 
 
 .eternal_container{
+  height: 703px;
     overflow: hidden;
     border: 2px solid;
     box-sizing: border-box;
@@ -860,6 +861,12 @@ body{
     min-width: 1024px;
     /* max-width: calc(100% - 440px); */
     background: #fff;
+}
+
+
+.eternal_container1{
+  top: 78px;
+  height: 40%;
 }
 
 .eternal_container2{
@@ -884,16 +891,23 @@ body{
 
 
 .eternal_section{
+  top: 0px;
     height: 100%;
     position: relative;
+
 }
 
 .sec_desc{
     width: 100%;
-    height: 50%;
+    height: 40%;
     position: absolute;
     left: 0;
     top: 0;
+}
+
+.sec_desc1 div {
+  top: 20px;
+  position: relative;
 }
 
 .aaa{
@@ -904,6 +918,28 @@ body{
     position: absolute;
     top: 50%;
     left: 0;
+}
+
+.aaa_1 {
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  top: 66%;
+  left: 0;
+}
+
+.aaa_2 {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 57%;
+  left: 0;
+}
+
+.aaa_3 {
+  height: 40%;
+  left: 20px;
+  top: 60%;
 }
 
 .sec_desc h1{
@@ -918,24 +954,24 @@ body{
 }
 
 .sec_desc div:nth-child(2){
-    position: absolute;
-    top: 70%;
-    left: 10%;
-    font-family: 'SpoqaHanSansNeo-Regular';
-    line-height: 40px;
-    font-weight: 100;
+  position: absolute;
+  top: 70%;
+  left: 11%;
+  font-family: 'SpoqaHanSansNeo-Regular';
+  line-height: 40px;
+  font-weight: 100;
 }
 
 
 /* container_swiper */
 
 .mySwiper1 {
-    width: 80%;
-    height: 72%;
-    top: 0;
-    left: 0;
-    background: #000;
-    border: 1px solid;
+  width: 80%;
+  height: 54%;
+  top: -45px;
+  left: 0;
+  background: #000;
+  border: 1px solid;
   }
 
   .eternal_container_swiper-wrapper{
@@ -1024,7 +1060,7 @@ body{
 
 .eternal_journey_title_L{
     top: 100px;
-    left: 100px;
+    left: 30px;
     position: absolute;
     color: #fff;
     /* z-index: 999; */
@@ -1038,8 +1074,10 @@ body{
 }
 
 .eternal_journey_desc_L{
+  position: relative;
+  left: 30px;
     top: 300px;
-    left: 100px;
+    /* left: 100px; */
     line-height: 40px;
     position: absolute;
     z-index: 999;
@@ -1054,6 +1092,16 @@ body{
     position: absolute;
     z-index: 999;
     font-family: 'SpoqaHanSansNeo-Regular';
+}
+
+.nose {
+  top: 236px;
+  line-height: 30px;
+}
+
+.eternal_journey_desc_R_1 {
+  position: relative;
+  left: 30px;
 }
 
 .eternal_journey_title h1{
@@ -1133,7 +1181,7 @@ body{
     align-items: center;
     justify-content: space-around;
     /* gap: 10px; */
-    width: 75%;
+    width: 85%;
     height: 30px;
     /* border: 1px solid; */
     box-sizing: border-box;
@@ -1144,15 +1192,17 @@ body{
 .fromto_box_white{
     color: #fff;
     bottom: 80px;
-    left: 13%;
+    left: 8%;
     /* background: url(../../img/ananti/eternal/ic-common-24-arrow-right-white.svg) no-repeat; */
     background-position: 450px;
     background-size: contain;
 }
 
+
+
 .fromto_box_black{
     color: #000;
-    bottom: 80px;
+    bottom: 140px;
     left: 13%;
     /* background: url(../../img/ananti/eternal/ic-common-16-arrow-right-black.svg) no-repeat; */
     background-position: right;
@@ -1162,6 +1212,10 @@ body{
 .fromto_box_long{
     left: 10%;
     width: 81%;
+}
+
+.ITaly {
+  bottom: 75px;
 }
 
 
@@ -1211,9 +1265,14 @@ body{
     border-radius: 20px;
   }
 
+  .perfume {
+    position: relative;
+    top: 120px;
+  }
+
 
   .CHABUAD_img_box{
-    top: 50%;
+    top: 60%;
     left: 100px;
     position: absolute;
     width: 72%;
@@ -1223,12 +1282,17 @@ body{
 
   .CHABUAD_img_box_item{
     position: relative;
+    top: -30px;
     border-radius: 40% 40% 0 0;
     margin: 0 auto;
     background: url(../../img/ananti/eternal/CHABAUD/20240130164408964.548635.jpg) no-repeat center / cover;
     width: 60%;
     height: 100%;
     /* border: 1px solid; */
+  }
+
+  .CH_FR {
+    bottom: 6px;
   }
 
 
@@ -1325,6 +1389,14 @@ body{
   .sm_menu_eternal{
     background: #000;
     color: #fff;
+  }
+
+  .JE {
+    bottom: 10px;
+  }
+
+  .green {
+    bottom: 40px;
   }
 
 
@@ -1437,9 +1509,11 @@ body{
   }
 
   .aaa{
-    width: 80%;
-    top: 50%;
-    left: -10px;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 53%;
+    left: 0;
   }
 
   .eternal_journey_left, .eternal_journey_right{
